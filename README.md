@@ -69,6 +69,6 @@ Conheça a equipe da ideia do **Sistema de Agendamento de Serviços Acadêmicos*
 
 ---
 
-Trabalho orientado pelo professor: [Walber Jose Adriano Silva](hhttps://github.com/walberjose). 
+Trabalho orientado pelo professor: [Walber Jose Adriano Silva](https://github.com/walberjose). 
 
 ---
