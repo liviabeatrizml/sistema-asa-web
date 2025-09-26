@@ -1,16 +1,86 @@
-# React + Vite
+# 📚 **Sistema de Agendamento de Serviços Acadêmicos**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## ❓ Apresentação 
 
-Currently, two official plugins are available:
+Na disciplina de “**Desenvolvimento de Aplicações para Dispositivos Móveis**” é abordado o processo de criação de aplicações mobile, explorando conceitos de interface e publicação. Este projeto foi desenvolvido utilizando React com Vite, servindo como base para a divulgação de um aplicativo mobile. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📖 Descrição
 
-## React Compiler
+O ASA é um sistema tem como intuito centralizar e automatizar os processos de agendamento de serviços especializados disponibilizados na Ufersa. Atualmente esse sistema ocorre por meio de páginas no portal da Ufersa via preenchimento de formulário. Dessa forma, como forma de automatização e centralização dos serviços, será desenvolvido um sistema que integrará essas informações em um só local.
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🎯 Objetivos
+> Integralizar os serviços acadêmicos oferecidos pela Ufersa a fim de facilitar e organizar o processo de agendamento.
 
-## Expanding the ESLint configuration
+-   **Facilitar** a edição de informações pelos servidores.
+-   **Reduzir o tempo** de solicitação de serviços especializados.
+-   Garantir a **transparência** das informações para a comunidade acadêmica.
+- **Sincronização** com serviços disponibilizados na universidade.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Desenvolvimento
+
+### 🏛️ Arquitetura Cliente-Servidor
+
+O sistema é construído com uma arquitetura cliente-servidor, utilizando as seguintes tecnologias e padrões:
+
+- **Padrão Criacional**: *Singleton*
+  - Garantia de uma única instância de um objeto e fornecimento de um ponto global de acesso a ele.
+ 
+- **Padrão Arquitetural**: *Model-View-Controller*
+  - Garantia da separação de tarefas, facilitando assim a reescrita de alguma parte, e a manutenção do código.
+
+### ⚙️ Tecnologias
+
+- **Back-end**:
+  - **Autenticação e Autorização:** AWS Cognito
+  - **Funções:** AWS Lambda
+  - **Gerenciamento de Rotas:** AWS API Gateway
+  - **Banco de Dados:** AWS DynamoDB
+
+- **Front-end**:
+  - **Biblioteca:** React.js
+  - **Estilização:** Tailwind CSS
+  - **Hospedagem:** AWS Amplify
+
+- **Infraestrutura**:
+  - **Domínio Customizado:** AWS Route 53
+
+## 👥 Equipe  
+
+Conheça a equipe da ideia do **Sistema de Agendamento de Serviços Acadêmicos**:  
+
+<p align="center">
+  <a href="https://github.com/AntonioCaue">
+    <img src="https://github.com/AntonioCaue.png" width="80" style="border-radius:50%"/>
+  </a>
+  <a href="https://github.com/cristiana0">
+    <img src="https://github.com/cristiana0.png" width="80" style="border-radius:50%"/>
+  </a>
+  <a href="https://github.com/ErikyAbreu">
+    <img src="https://github.com/ErikyAbreu.png" width="80" style="border-radius:50%"/>
+  </a>
+  <a href="https://github.com/RenanCosta2">
+    <img src="https://github.com/RenanCosta2.png" width="80" style="border-radius:50%"/>
+  </a>
+  <a href="https://github.com/Geisa-mg">
+    <img src="https://github.com/Geisa-mg.png" width="80" style="border-radius:50%"/>
+  </a>
+  <a href="https://github.com/LilPuppet">
+    <img src="https://github.com/LilPuppet.png" width="80" style="border-radius:50%"/>
+  </a>
+  <a href="https://github.com/liviabeatrizml">
+    <img src="https://github.com/liviabeatrizml.png" width="80" style="border-radius:50%"/>
+  </a>
+  <a href="https://github.com/LanuzaSantos">
+    <img src="https://github.com/LanuzaSantos.png" width="80" style="border-radius:50%"/>
+  </a>
+  <a href="https://github.com/TiagoDev23">
+    <img src="https://github.com/TiagoDev23.png" width="80" style="border-radius:50%"/>
+  </a>
+</p>
+
+
+---
+
+Trabalho orientado pelo professor: [Walber Jose Adriano Silva](hhttps://github.com/walberjose). 
+
+---
