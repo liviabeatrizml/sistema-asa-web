@@ -16,18 +16,6 @@ O ASA é um sistema tem como intuito centralizar e automatizar os processos de a
 -   Garantir a **transparência** das informações para a comunidade acadêmica.
 - **Sincronização** com serviços disponibilizados na universidade.
 
-## 🛠️ Desenvolvimento
-
-### 🏛️ Arquitetura Cliente-Servidor
-
-O sistema é construído com uma arquitetura cliente-servidor, utilizando as seguintes tecnologias e padrões:
-
-- **Padrão Criacional**: *Singleton*
-  - Garantia de uma única instância de um objeto e fornecimento de um ponto global de acesso a ele.
- 
-- **Padrão Arquitetural**: *Model-View-Controller*
-  - Garantia da separação de tarefas, facilitando assim a reescrita de alguma parte, e a manutenção do código.
-
 ### ⚙️ Tecnologias
 
 - **Back-end**:
