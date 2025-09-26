@@ -1,0 +1,302 @@
+/* REGRAS PARA LAYOUT DE TELA CHEIA */
+html, body, #root {
+  height: 100%;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background-color: var(--background-light);
+}
+
+main {
+  flex: 1 0 auto;
+}
+/* FIM DAS REGRAS PARA TELA CHEIA */
+
+
+/* 1. VARIÁVEIS E ESTILOS GLOBAIS */
+:root {
+  --dark-blue: #2A3A4D;
+  --light-blue-logo: #8CC0DE;
+  --text-dark: #333745;
+  --text-light: #FFFFFF;
+  --background-light: #FFFFFF;
+  --background-dark: #2A3A4D;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* 2. HEADER */
+.header {
+  padding: 1.5rem 0;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-asa {
+  width: 60px;
+  height: auto;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  margin-left: 2rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.main-nav a:hover {
+  color: var(--dark-blue);
+}
+
+
+/* 3. SEÇÃO PRINCIPAL (HERO) */
+.hero-section {
+  padding: 2rem 0 5rem 0;
+}
+
+.hero-section .container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero-text {
+  flex: 1.2;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  color: var(--text-dark);
+  line-height: 1.6;
+  max-width: 500px;
+  margin-bottom: 2.5rem;
+}
+
+.app-store-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.store-badge {
+  display: inline-block;
+  height: 50px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.store-badge:hover {
+  transform: scale(1.05);
+}
+
+.hero-image {
+  flex: 1;
+  text-align: right;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 4. NOVA SEÇÃO DE FUNCIONALIDADES DO APP */
+.app-features-section {
+  padding: 6rem 0;
+}
+
+.app-features-section .container {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.phone-mockup {
+  flex: 1;
+  text-align: center;
+}
+
+.phone-mockup img {
+  max-height: 500px;
+}
+
+.features-list {
+  flex: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.features-list h2 {
+  font-size: 2.8rem;
+  color: var(--text-dark);
+  margin-bottom: 2.5rem;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.feature-item-icon {
+  background-color: #eef5fa;
+  color: var(--dark-blue);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.feature-item-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.feature-item-text h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.25rem;
+  color: var(--text-dark);
+}
+
+.feature-item-text p {
+  margin: 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* 5. SEÇÃO DE INFORMAÇÕES (AZUL) - ATUALIZADO PARA IMAGEM E TEXTO */
+.info-section {
+  background-color: var(--dark-blue);
+  color: var(--text-light);
+  padding: 5rem 0;
+  overflow: hidden; /* Garante que nada vaze */
+}
+
+.info-section .container {
+  display: flex;
+  align-items: center; /* Alinha os itens verticalmente no centro */
+  gap: 4rem; /* Espaço entre a imagem e o texto */
+  flex-direction: row; /* Garante que fiquem lado a lado */
+}
+
+.info-main-image { /* Estilos para a nova imagem */
+  flex: 1; /* Permite que a imagem ocupe uma parte do espaço */
+  text-align: center; /* Centraliza a imagem se ela for menor */
+}
+
+.info-main-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Opcional: bordas arredondadas para a imagem */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Opcional: uma sombra sutil */
+}
+
+.info-text {
+  flex: 1.5; /* Dá mais espaço para o texto que para a imagem */
+}
+
+.info-text h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 2rem;
+}
+
+.info-text p {
+  font-size: 1rem;
+  line-height: 1.8;
+  max-width: 600px;
+  margin-bottom: 1rem;
+}
+
+
+/* 6. FOOTER */
+.footer {
+  background-color: #F0F2F5;
+  padding: 1rem 0;
+  font-size: 0.8rem;
+  color: #6c757d;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 7. RESPONSIVIDADE */
+@media (max-width: 992px) {
+  .hero-section .container,
+  .app-features-section .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .hero-text p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .app-store-buttons {
+    justify-content: center;
+  }
+  
+  .hero-image {
+    margin-top: 2rem;
+    order: -1; 
+  }
+
+  .phone-mockup {
+    margin-bottom: 3rem;
+  }
+
+  .features-list h2 {
+    text-align: center;
+  }
+
+  .feature-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .info-section .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .info-main-image {
+    margin-bottom: 3rem;
+  }
+}
